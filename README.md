@@ -10,10 +10,10 @@ Repositorio privado para organizar fuentes por asignatura y las salidas consumid
 - `examenes/<slug>/context-exam.md`: guía de estilo generada a partir de exámenes de referencia (flujo 006).
 - `planes/<slug>/`: plan JSON y Markdown generados por el planificador (flujo 005).
 
-Los slugs usan minúsculas sin tildes ni espacios. Se incluyen `historia`, `ingles` y `matematicas` como carpetas iniciales vacías; se pueden añadir otras asignaturas siguiendo el mismo patrón. No se incluyen datos de alumnos: la ruta y los controles de privacidad de esa salida quedan sujetos al contrato de la Skill 007.
+Los slugs usan minúsculas sin tildes ni espacios. Están preparadas las carpetas de `historia`, `ingles` y `matematicas`; Historia ya tiene materiales fuente y las otras asignaturas quedan listas para recibirlos. Se pueden añadir otras asignaturas siguiendo el mismo patrón. No se incluyen datos de alumnos: la ruta y los controles de privacidad de esa salida quedan sujetos al contrato de la Skill 007.
 
-## Branch contract
+## Contrato de la rama
 
-All study-material Skills read and write this library on the `material-estudio` branch. Material snapshots use tags shaped as `plan/<subject-slug>/<YYYYMMDD>-<short-id>` and are created only after a material add, replacement, or deletion commit. Plan, exam-style profile, and practice-output commits do not create tags; each consumer records the material tag it used.
+Todas las Skills de materiales leen y escriben esta biblioteca en la rama `material-estudio`. Los snapshots de materiales usan tags con el formato `plan/<slug-asignatura>/<YYYYMMDD>-<identificador-corto>` y se crean solo después de un commit que añade, sustituye o elimina material. Los commits de planes, perfiles de estilo y resultados de práctica no crean tags; cada consumidor registra el tag de materiales que utilizó.
 
-Practice results, when generated, belong under `alumnos/<student>/asignaturas/<subject-slug>/examenes/<exam-id>/`. The empty `alumnos/` directory is only a location placeholder; do not place student data there without a specific practice request.
+Cuando se generen, los resultados de práctica se guardan en `alumnos/<alumno>/asignaturas/<slug-asignatura>/examenes/<id-examen>/`. La carpeta `alumnos/` está vacía y solo reserva la ubicación; no agregues datos de estudiantes sin una solicitud de práctica concreta.
