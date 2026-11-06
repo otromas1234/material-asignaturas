@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "practice_id": "20261106-2337-s03-prueba-flujo",
+  "student": {
+    "id": "1",
+    "name": "Alumno 1"
+  },
+  "subject": {
+    "slug": "historia",
+    "name": "Historia y Geografía"
+  },
+  "status": "submitted",
+  "submitted_at": "2026-11-06T23:37:54+01:00",
+  "answers": [
+    {
+      "question_id": "q1",
+      "text": "a) reespues ficticia para validad; b) reespues ficticia para validad; c) reespues ficticia para validad",
+      "images": []
+    },
+    {
+      "question_id": "q2",
+      "text": "Función del mercado: reespues ficticia para validad; recursos y uso: reespues ficticia para validad; oportunidades: reespues ficticia para validad",
+      "images": []
+    },
+    {
+      "question_id": "q3",
+      "text": "a) ddd; b) ddd; c) ddd; d) sdfvsd; e) dfsdf; f) dfsdf",
+      "images": []
+    },
+    {
+      "question_id": "q4",
+      "text": "sdf",
+      "images": []
+    },
+    {
+      "question_id": "q5",
+      "text": "dsfas; dfasdf",
+      "images": []
+    }
+  ]
+}
