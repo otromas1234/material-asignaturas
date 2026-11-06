@@ -20,7 +20,7 @@ Los tiempos son estimaciones; impartido no significa aprendido. Examen y correcc
 
 Sin límite fijo por sesión solicitado.
 
-Snapshot de materiales: otromas1234/material-estudio@plan/matematicas/20261031-6285fa20.
+Snapshot de materiales: otromas1234/material-asignaturas@plan/matematicas/20261031-6285fa20.
 
 Capacidad diaria: sin límite diario por petición explícita.
 

@@ -6,7 +6,7 @@
     "name": "Matemáticas"
   },
   "source_snapshot": {
-    "repository": "otromas1234/material-estudio",
+    "repository": "otromas1234/material-asignaturas",
     "tag": "plan/matematicas/20261031-6285fa20"
   },
   "references": [

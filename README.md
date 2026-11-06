@@ -1,6 +1,6 @@
 # Biblioteca de materiales de estudio
 
-Repositorio privado para organizar fuentes por asignatura y las salidas consumidas por las Skills de estudio.
+Repositorio público para organizar fuentes por asignatura y las salidas consumidas por las Skills de estudio.
 
 ## Estructura
 
@@ -14,6 +14,6 @@ Los slugs usan minúsculas sin tildes ni espacios. Están preparadas las carpeta
 
 ## Contrato de la rama
 
-Todas las Skills de materiales leen y escriben esta biblioteca en la rama `material-estudio`. Los snapshots de materiales usan tags con el formato `plan/<slug-asignatura>/<YYYYMMDD>-<identificador-corto>` y se crean solo después de un commit que añade, sustituye o elimina material. Los commits de planes, perfiles de estilo y resultados de práctica no crean tags; cada consumidor registra el tag de materiales que utilizó.
+Todas las Skills de materiales leen y escriben esta biblioteca en la rama `main`. Los snapshots de materiales usan tags con el formato `plan/<slug-asignatura>/<YYYYMMDD>-<identificador-corto>` y se crean solo después de un commit que añade, sustituye o elimina material. Los commits de planes, perfiles de estilo y resultados de práctica no crean tags; cada consumidor registra el tag de materiales que utilizó. Este repositorio es público: los resultados bajo `alumnos/` también serán públicos y solo deben guardarse cuando su publicación esté autorizada.
 
 Cuando se generen, los resultados de práctica se guardan en `alumnos/<alumno>/asignaturas/<slug-asignatura>/examenes/<id-examen>/`. La carpeta `alumnos/` está vacía y solo reserva la ubicación; no agregues datos de estudiantes sin una solicitud de práctica concreta.
