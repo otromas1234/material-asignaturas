@@ -7,11 +7,11 @@
   },
   "source_snapshot": {
     "repository": "otromas1234/material-asignaturas",
-    "tag": "plan/matematicas/20261031-6285fa20"
+    "tag": "plan/matematicas/20261106-efbadcba"
   },
   "references": [
     {
-      "id": "ref-cd-2223",
+      "id": "ref-cd-1a-2223",
       "path": "asignaturas/matematicas/examenes-referencia/examen-cd-1a-evaluacion-2022-23-soluciones.pdf",
       "year": 2022,
       "read_status": "partial",
@@ -22,31 +22,87 @@
       ],
       "excluded_locators": [
         {
-          "locator": "Transcripción exacta de expresiones/fórmulas en las páginas incluidas",
-          "reason": "OCR de símbolos y disposición matemática no verificado visualmente; no se usa como evidencia literal."
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
         }
       ]
     },
     {
-      "id": "ref-cd-2324",
+      "id": "ref-cd-1a-2324",
       "path": "asignaturas/matematicas/examenes-referencia/examen-cd-1a-evaluacion-2023-24-soluciones.pdf",
       "year": 2023,
       "read_status": "partial",
       "included_locators": [
         "Página 1",
         "Página 2",
-        "Página 3"
+        "Página 3",
+        "Página 4",
+        "Página 5"
       ],
       "excluded_locators": [
         {
-          "locator": "Transcripción exacta de expresiones/fórmulas en las páginas incluidas",
-          "reason": "OCR de símbolos y disposición matemática no verificado visualmente; no se usa como evidencia literal."
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
         }
       ]
     },
     {
-      "id": "ref-cd-2425",
+      "id": "ref-cd-1a-2425",
       "path": "asignaturas/matematicas/examenes-referencia/examen-cd-1a-evaluacion-2024-25-soluciones.pdf",
+      "year": 2024,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-cd-1a-2526",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-cd-1a-evaluacion-2025-26-soluciones.pdf",
+      "year": 2025,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-cd-2a-2324",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-cd-2a-evaluacion-2023-24-soluciones.pdf",
+      "year": 2023,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-cd-2a-2425",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-cd-2a-evaluacion-2024-25-soluciones.pdf",
       "year": 2024,
       "read_status": "partial",
       "included_locators": [
@@ -58,15 +114,95 @@
       ],
       "excluded_locators": [
         {
-          "locator": "Transcripción exacta de expresiones/fórmulas en las páginas incluidas",
-          "reason": "OCR de símbolos y disposición matemática no verificado visualmente; no se usa como evidencia literal."
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
         }
       ]
     },
     {
-      "id": "ref-cd-2526",
-      "path": "asignaturas/matematicas/examenes-referencia/examen-cd-1a-evaluacion-2025-26-soluciones.pdf",
+      "id": "ref-cd-2a-2526",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-cd-2a-evaluacion-2025-26-soluciones.pdf",
       "year": 2025,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4",
+        "Página 5",
+        "Página 6",
+        "Página 7"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-cd-3a-2324",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-cd-3a-evaluacion-2023-24-soluciones.pdf",
+      "year": 2023,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4",
+        "Página 5"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-cd-3a-2425",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-cd-3a-evaluacion-2024-25-soluciones.pdf",
+      "year": 2024,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4",
+        "Página 5",
+        "Página 6"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-cd-3a-2526",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-cd-3a-evaluacion-2025-26-soluciones.pdf",
+      "year": 2025,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4",
+        "Página 5",
+        "Página 6"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-global-1a-2223",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-global-1a-evaluacion-2022-23-soluciones.pdf",
+      "year": 2022,
       "read_status": "partial",
       "included_locators": [
         "Página 1",
@@ -75,49 +211,30 @@
       ],
       "excluded_locators": [
         {
-          "locator": "Transcripción exacta de expresiones/fórmulas en las páginas incluidas",
-          "reason": "OCR de símbolos y disposición matemática no verificado visualmente; no se usa como evidencia literal."
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
         }
       ]
     },
     {
-      "id": "ref-global-2223",
-      "path": "asignaturas/matematicas/examenes-referencia/examen-global-1a-evaluacion-2022-23-soluciones.pdf",
-      "year": 2022,
-      "read_status": "partial",
-      "included_locators": [
-        "Página 1",
-        "Página 2",
-        "Página 3",
-        "Página 4"
-      ],
-      "excluded_locators": [
-        {
-          "locator": "Transcripción exacta de expresiones/fórmulas en las páginas incluidas",
-          "reason": "OCR de símbolos y disposición matemática no verificado visualmente; no se usa como evidencia literal."
-        }
-      ]
-    },
-    {
-      "id": "ref-global-2324",
+      "id": "ref-global-1a-2324",
       "path": "asignaturas/matematicas/examenes-referencia/examen-global-1a-evaluacion-2023-24-soluciones.pdf",
       "year": 2023,
       "read_status": "partial",
       "included_locators": [
         "Página 1",
         "Página 2",
-        "Página 3",
-        "Página 4"
+        "Página 3"
       ],
       "excluded_locators": [
         {
-          "locator": "Transcripción exacta de expresiones/fórmulas en las páginas incluidas",
-          "reason": "OCR de símbolos y disposición matemática no verificado visualmente; no se usa como evidencia literal."
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
         }
       ]
     },
     {
-      "id": "ref-global-2425",
+      "id": "ref-global-1a-2425",
       "path": "asignaturas/matematicas/examenes-referencia/examen-global-1a-evaluacion-2024-25-soluciones.pdf",
       "year": 2024,
       "read_status": "partial",
@@ -129,13 +246,13 @@
       ],
       "excluded_locators": [
         {
-          "locator": "Transcripción exacta de expresiones/fórmulas en las páginas incluidas",
-          "reason": "OCR de símbolos y disposición matemática no verificado visualmente; no se usa como evidencia literal."
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
         }
       ]
     },
     {
-      "id": "ref-global-2526",
+      "id": "ref-global-1a-2526",
       "path": "asignaturas/matematicas/examenes-referencia/examen-global-1a-evaluacion-2025-26-soluciones.pdf",
       "year": 2025,
       "read_status": "partial",
@@ -151,14 +268,132 @@
       ],
       "excluded_locators": [
         {
-          "locator": "Transcripción exacta de expresiones/fórmulas en las páginas incluidas",
-          "reason": "OCR de símbolos y disposición matemática no verificado visualmente; no se usa como evidencia literal."
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-global-2a-2324",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-global-2a-evaluacion-2023-24-soluciones.pdf",
+      "year": 2023,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4",
+        "Página 5"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-global-2a-2425",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-global-2a-evaluacion-2024-25-soluciones.pdf",
+      "year": 2024,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4",
+        "Página 5",
+        "Página 6"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-global-2a-2526",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-global-2a-evaluacion-2025-26-soluciones.pdf",
+      "year": 2025,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4",
+        "Página 5",
+        "Página 6",
+        "Página 7"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-global-3a-2324",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-global-3a-evaluacion-2023-24-soluciones.pdf",
+      "year": 2023,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-global-3a-2425",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-global-3a-evaluacion-2024-25-soluciones.pdf",
+      "year": 2024,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
+        }
+      ]
+    },
+    {
+      "id": "ref-global-3a-2526",
+      "path": "asignaturas/matematicas/examenes-referencia/examen-global-3a-evaluacion-2025-26-soluciones.pdf",
+      "year": 2025,
+      "read_status": "partial",
+      "included_locators": [
+        "Página 1",
+        "Página 2",
+        "Página 3",
+        "Página 4",
+        "Página 5",
+        "Página 6"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Transcripción exacta de expresiones y símbolos matemáticos",
+          "reason": "La extracción de texto permite reconocer instrucciones y tipos generales, pero los signos, exponentes, fracciones y algunos detalles de composición no se han verificado visualmente; no se afirman transcripciones literales."
         }
       ]
     }
   ],
   "limitations": [
-    "Se consultaron los textos OCR página por página, no una inspección visual de los PDF. La extracción altera o vuelve ambiguos signos, exponentes y fracciones; las afirmaciones describen tipos de ejercicio reconocibles, no la transcripción exacta de expresiones. Los encabezados visibles en la captura incluyen «Esquema factori…» y «Material a entre…» truncados; no se infiere su contenido. No se proporcionaron hojas de ejercicios separadas: las fuentes disponibles son dos apuntes y ocho exámenes resueltos."
+    "Se incorporan 20 exámenes resueltos distintos de 1.ª, 2.ª y 3.ª evaluación, cursos 2022-23 a 2025-26; una copia idéntica localizada en los materiales aportados no se cuenta dos veces.",
+    "Se extrajo el texto completo de las páginas y se reconocieron instrucciones, organización y tipos generales. Las expresiones matemáticas exactas y la composición visual no se verificaron visualmente; el análisis se limita por eso a patrones generales.",
+    "Los exámenes de referencia informan sobre el formato observado, no establecen el temario, la dificultad oficial ni el alcance de la prueba del 20/11/2026."
   ]
 }
 ```
@@ -167,224 +402,116 @@
 
 ## Fuentes y cobertura
 
-Ocho exámenes resueltos, en modalidad CD y Global, con cursos identificados por las rutas 2022-23 a 2025-26. Se revisó cada página de los textos extraídos. La evidencia se limita a páginas indicadas por observación; signos y fórmulas no se citan literalmente por la incertidumbre del OCR.
+Se revisaron 20 exámenes resueltos distintos: modalidades CD y Global, en las tres evaluaciones y cursos 2022-23 a 2025-26. El texto de todas las páginas se pudo extraer. Se excluyen las transcripciones exactas de fórmulas/símbolos por no haberse verificado visualmente; los patrones descritos son de nivel general.
 
 ## Patrones observados
 
 ```profile-observations
 [
   {
-    "id": "obs-1",
+    "id": "obs-question-types",
     "dimension": "question_types",
-    "description": "Se observan cálculos/simplificaciones de fracciones en varios exámenes y problemas contextualizados sobre fracciones de cantidades.",
+    "description": "Se observan ejercicios de cálculo y simplificación (fracciones y potencias), problemas contextualizados, operaciones con radicales, ecuaciones y, en globales de 3.ª evaluación, sucesiones; el contenido varía según evaluación y modalidad.",
     "evidence": [
       {
-        "reference_id": "ref-cd-2223",
+        "reference_id": "ref-cd-1a-2223",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-cd-2324",
+        "reference_id": "ref-global-1a-2425",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-cd-2425",
+        "reference_id": "ref-cd-2a-2324",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-cd-2425",
-        "locator": "Página 3"
-      },
-      {
-        "reference_id": "ref-cd-2526",
+        "reference_id": "ref-cd-3a-2324",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-global-2223",
-        "locator": "Página 1"
-      },
-      {
-        "reference_id": "ref-global-2223",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2324",
-        "locator": "Página 1"
-      },
-      {
-        "reference_id": "ref-global-2324",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2425",
-        "locator": "Página 3"
-      },
-      {
-        "reference_id": "ref-global-2526",
+        "reference_id": "ref-global-3a-2324",
         "locator": "Página 1"
       }
     ]
   },
   {
-    "id": "obs-2",
+    "id": "obs-organization",
     "dimension": "organization",
-    "description": "Los exámenes legibles se organizan en ejercicios numerados; algunos dividen una tarea en apartados a/b y muestran puntuación por ejercicio.",
+    "description": "La organización suele usar ejercicios numerados, a veces con apartados a/b, y puntuación indicada en varios enunciados.",
     "evidence": [
       {
-        "reference_id": "ref-cd-2223",
+        "reference_id": "ref-cd-1a-2223",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-cd-2425",
+        "reference_id": "ref-cd-1a-2425",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-global-2223",
+        "reference_id": "ref-cd-2a-2324",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-global-2425",
-        "locator": "Página 1"
-      },
-      {
-        "reference_id": "ref-global-2526",
+        "reference_id": "ref-global-3a-2324",
         "locator": "Página 1"
       }
     ]
   },
   {
-    "id": "obs-3",
+    "id": "obs-instructions",
     "dimension": "instructions",
-    "description": "Consignas visibles incluyen hallar fracción irreducible, operar y simplificar, operar radicales, indicar cociente/resto y factorizar polinomios.",
+    "description": "Las instrucciones son directas: operar/simplificar, hallar una fracción irreducible, resolver ejercicios o ecuaciones.",
     "evidence": [
       {
-        "reference_id": "ref-cd-2223",
+        "reference_id": "ref-global-1a-2223",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-cd-2223",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-cd-2324",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-cd-2526",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2324",
+        "reference_id": "ref-cd-1a-2425",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-global-2324",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2425",
-        "locator": "Página 3"
-      },
-      {
-        "reference_id": "ref-global-2425",
-        "locator": "Página 4"
-      },
-      {
-        "reference_id": "ref-global-2526",
+        "reference_id": "ref-cd-3a-2324",
         "locator": "Página 1"
-      },
-      {
-        "reference_id": "ref-global-2526",
-        "locator": "Página 2"
       }
     ]
   },
   {
-    "id": "obs-4",
+    "id": "obs-difficulty",
     "dimension": "apparent_difficulty",
-    "description": "Dificultad aparente orientativa: hay procedimientos simbólicos de varios pasos y problemas contextualizados; el OCR impide valorar con precisión la carga de cálculo.",
+    "description": "La dificultad aparente proviene de encadenar varios pasos algebraicos o numéricos en un ejercicio y de resolver apartados; es una lectura descriptiva, no una calificación oficial.",
     "evidence": [
       {
-        "reference_id": "ref-cd-2324",
-        "locator": "Página 2"
+        "reference_id": "ref-global-1a-2425",
+        "locator": "Página 1"
       },
       {
-        "reference_id": "ref-cd-2324",
-        "locator": "Página 3"
+        "reference_id": "ref-cd-2a-2324",
+        "locator": "Página 1"
       },
       {
-        "reference_id": "ref-cd-2526",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2324",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2324",
-        "locator": "Página 4"
-      },
-      {
-        "reference_id": "ref-global-2526",
-        "locator": "Página 3"
-      },
-      {
-        "reference_id": "ref-global-2526",
-        "locator": "Página 4"
+        "reference_id": "ref-cd-3a-2425",
+        "locator": "Página 1"
       }
     ]
   },
   {
-    "id": "obs-5",
+    "id": "obs-response-modes",
     "dimension": "response_modes",
-    "description": "Las soluciones muestran resultados numéricos con desarrollo de operaciones y planteamientos/resoluciones de problemas; en álgebra aparecen cociente y resto.",
+    "description": "Las soluciones muestran desarrollo escrito de operaciones y procedimientos; algunos enunciados requieren traducir una situación verbal a cálculos. No todos piden explicación verbal.",
     "evidence": [
       {
-        "reference_id": "ref-cd-2223",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-cd-2324",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-cd-2425",
-        "locator": "Página 3"
-      },
-      {
-        "reference_id": "ref-cd-2526",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2223",
+        "reference_id": "ref-cd-1a-2425",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-global-2223",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2324",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2425",
+        "reference_id": "ref-cd-2a-2425",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-global-2425",
-        "locator": "Página 3"
-      },
-      {
-        "reference_id": "ref-global-2425",
-        "locator": "Página 4"
-      },
-      {
-        "reference_id": "ref-global-2526",
+        "reference_id": "ref-cd-3a-2324",
         "locator": "Página 1"
-      },
-      {
-        "reference_id": "ref-global-2526",
-        "locator": "Página 2"
       }
     ]
   }
@@ -393,103 +520,85 @@ Ocho exámenes resueltos, en modalidad CD y Global, con cursos identificados por
 
 ## Recurrencias
 
-Los recuentos corresponden a exámenes distintos con evidencia localizada, no a número de menciones.
+Las recurrencias resumen únicamente las muestras indicadas; no predicen preguntas futuras.
 
 ```profile-recurrences
 [
   {
-    "id": "rec-1",
+    "id": "rec-fractions-first-eval",
     "unit": "distinct_exams",
-    "description": "Ejercicios de operaciones/simplificación con fracciones aparecen en los exámenes CD 2022-23, CD 2024-25, CD 2025-26, Global 2022-23 y Global 2024-25; no se cuenta cada apartado como examen separado.",
-    "observed_count": 5,
+    "description": "En los ocho exámenes de 1.ª evaluación revisados se observan ejercicios de cálculo o simplificación de fracciones; la forma concreta cambia entre años y modalidades. Esto describe la muestra y no predice el examen próximo.",
+    "observed_count": 8,
     "sample_size": 8,
     "evidence": [
       {
-        "reference_id": "ref-cd-2223",
+        "reference_id": "ref-cd-1a-2223",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-cd-2425",
+        "reference_id": "ref-cd-1a-2324",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-cd-2526",
+        "reference_id": "ref-cd-1a-2425",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-global-2223",
-        "locator": "Página 2"
+        "reference_id": "ref-cd-1a-2526",
+        "locator": "Página 1"
       },
       {
-        "reference_id": "ref-global-2425",
-        "locator": "Página 3"
+        "reference_id": "ref-global-1a-2223",
+        "locator": "Página 1"
+      },
+      {
+        "reference_id": "ref-global-1a-2324",
+        "locator": "Página 1"
+      },
+      {
+        "reference_id": "ref-global-1a-2425",
+        "locator": "Página 1"
+      },
+      {
+        "reference_id": "ref-global-1a-2526",
+        "locator": "Página 1"
       }
     ],
-    "comparability_limits": "Conteo limitado a ejercicios reconocibles en OCR; no estima probabilidad futura ni cobertura completa."
+    "comparability_limits": "Solo la 1.ª evaluación de cuatro cursos y dos modalidades; exámenes resueltos y OCR de símbolos no verificado visualmente."
   },
   {
-    "id": "rec-2",
+    "id": "rec-equations-cd-third-eval",
     "unit": "distinct_exams",
-    "description": "Operaciones con radicales aparecen en los cuatro exámenes de las referencias con evidencia inequívoca: CD 2022-23, CD 2023-24, Global 2023-24 y Global 2024-25.",
-    "observed_count": 4,
-    "sample_size": 8,
+    "description": "Las ecuaciones aparecen como ejercicio inicial en los tres exámenes CD de 3.ª evaluación de 2023-24, 2024-25 y 2025-26. No implica que vayan a aparecer en otro examen.",
+    "observed_count": 3,
+    "sample_size": 3,
     "evidence": [
       {
-        "reference_id": "ref-cd-2223",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-cd-2324",
+        "reference_id": "ref-cd-3a-2324",
         "locator": "Página 1"
       },
       {
-        "reference_id": "ref-global-2324",
-        "locator": "Página 2"
+        "reference_id": "ref-cd-3a-2425",
+        "locator": "Página 1"
       },
       {
-        "reference_id": "ref-global-2425",
-        "locator": "Página 4"
+        "reference_id": "ref-cd-3a-2526",
+        "locator": "Página 1"
       }
     ],
-    "comparability_limits": "Se contabiliza únicamente evidencia OCR legible de estos cuatro exámenes; la muestra parcial no permite predicción."
-  },
-  {
-    "id": "rec-3",
-    "unit": "distinct_exams",
-    "description": "División o factorización de polinomios se observa en CD 2023-24, CD 2025-26, Global 2023-24 y Global 2025-26.",
-    "observed_count": 4,
-    "sample_size": 8,
-    "evidence": [
-      {
-        "reference_id": "ref-cd-2324",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-cd-2526",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2324",
-        "locator": "Página 2"
-      },
-      {
-        "reference_id": "ref-global-2526",
-        "locator": "Página 2"
-      }
-    ],
-    "comparability_limits": "Agrupación temática de ejercicios reconocibles; OCR parcial y no es una predicción."
+    "comparability_limits": "Solo tres exámenes CD de 3.ª evaluación; no se generaliza a otras modalidades ni a próximas pruebas."
   }
 ]
 ```
 
 ## Recomendaciones de formato
 
-Orientación, no observación: alternar cálculo con problemas contextualizados y pedir que se comprueben los procedimientos; no es una predicción del examen siguiente.
+Orientación, no observación: practicar cálculos con varios pasos, alternando ejercicios directos con problemas contextualizados cuando estén dentro del contenido confirmado. No inferir el temario de la próxima prueba a partir de estas referencias.
 
 ## Ejemplos originales
 
-Ejemplo inventado: no se incluye ninguno; no se han generado preguntas de práctica.
+Ejemplo inventado: simplifica una expresión numérica y muestra los pasos; es una ilustración del formato, no una pregunta de los exámenes revisados.
 
 ## Limitaciones
 
-La calidad OCR puede alterar signos, exponentes, numeradores y denominadores. No se infieren temario oficial, dificultad oficial, criterios de calificación ni contenidos impartidos. Los rótulos «Esquema factori…» y «Material a entre…» de la captura están truncados y su alcance es desconocido. Las fuentes disponibles son apuntes y exámenes resueltos; no se recibió una hoja de ejercicios independiente.
+La muestra mezcla evaluaciones y modalidades y contiene soluciones, no solo enunciados. La transcripción OCR de signos, fracciones, exponentes y distribución espacial puede alterarse; no se atribuye al centro una escala oficial de dificultad ni un temario futuro.
