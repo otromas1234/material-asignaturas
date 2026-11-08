@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0",
+  "practice_id": "20261108-1122-s07-pesca",
+  "created_at": "2026-11-08T11:22:03+01:00",
+  "student": {
+    "id": "1",
+    "name": "Alumno 1"
+  },
+  "subject": {
+    "slug": "historia",
+    "name": "Historia y Geografía"
+  },
+  "source_snapshot": {
+    "repository": "otromas1234/material-asignaturas",
+    "tag": "plan/historia/20261030-9e23100f"
+  },
+  "plan_reference": {
+    "path": "planes/historia/plan.json",
+    "commit": "8ce9d39e078662baab4b87a870d48ca02bf75859",
+    "session_ids": [
+      "s07"
+    ]
+  },
+  "profile": null,
+  "practice_mode": "general",
+  "scope": {
+    "description": "Exclusivamente s07: pesca, factores de localización, pesca tradicional y comercial (costera y de altura), técnicas y acuicultura. Plan historia-geografia-exam-2026-11-20, revisión 2. Cinco preguntas sin apuntes; una por vez. No incluye otros apartados de U2.",
+    "units": [
+      "2"
+    ],
+    "key_concepts": [
+      "Factores de localización",
+      "Pesca tradicional",
+      "Pesca comercial costera y de altura",
+      "Técnicas de pesca",
+      "Acuicultura"
+    ]
+  },
+  "source_refs": [
+    {
+      "id": "u2-1",
+      "path": "asignaturas/historia/contenidos/unit-2-primary-sector.docx",
+      "unit": "2",
+      "key_concepts": [
+        "Factores de localización"
+      ],
+      "locators": [
+        {
+          "kind": "heading",
+          "value": "FISHING"
+        },
+        {
+          "kind": "section",
+          "value": "4.1. Factors Influencing Fishing:"
+        }
+      ]
+    },
+    {
+      "id": "u2-2",
+      "path": "asignaturas/historia/contenidos/unit-2-primary-sector.docx",
+      "unit": "2",
+      "key_concepts": [
+        "Pesca tradicional"
+      ],
+      "locators": [
+        {
+          "kind": "heading",
+          "value": "FISHING"
+        },
+        {
+          "kind": "section",
+          "value": "4.2. Types of Fishing: — Traditional Fishing:"
+        }
+      ]
+    },
+    {
+      "id": "u2-3",
+      "path": "asignaturas/historia/contenidos/unit-2-primary-sector.docx",
+      "unit": "2",
+      "key_concepts": [
+        "Pesca comercial costera y de altura"
+      ],
+      "locators": [
+        {
+          "kind": "heading",
+          "value": "FISHING"
+        },
+        {
+          "kind": "section",
+          "value": "4.2. Types of Fishing: — Commercial Fishing: / Coastal Fishing: / Deep-Sea Fishing:"
+        }
+      ]
+    },
+    {
+      "id": "u2-4",
+      "path": "asignaturas/historia/contenidos/unit-2-primary-sector.docx",
+      "unit": "2",
+      "key_concepts": [
+        "Técnicas de pesca"
+      ],
+      "locators": [
+        {
+          "kind": "heading",
+          "value": "FISHING"
+        },
+        {
+          "kind": "section",
+          "value": "3. Fishing Techniques:"
+        }
+      ]
+    },
+    {
+      "id": "u2-5",
+      "path": "asignaturas/historia/contenidos/unit-2-primary-sector.docx",
+      "unit": "2",
+      "key_concepts": [
+        "Acuicultura"
+      ],
+      "locators": [
+        {
+          "kind": "heading",
+          "value": "FISHING"
+        },
+        {
+          "kind": "section",
+          "value": "4. Aquaculture:"
+        }
+      ]
+    }
+  ],
+  "corrected_at": "2026-11-08T11:22:03+01:00",
+  "status": "complete",
+  "score": {
+    "total": 6.25,
+    "max": 10,
+    "assessed_total": 6.25,
+    "assessed_max": 10
+  },
+  "questions": [
+    {
+      "question_id": "q1",
+      "status": "graded",
+      "score": 0,
+      "max_score": 2,
+      "feedback": "No coincide con los dos factores del material. Repasa poca profundidad y encuentro de corrientes cálidas y frías. Confusión conceptual central en esta pregunta; clasificación pendiente de revisión adulta.",
+      "source_ref_ids": [
+        "u2-1"
+      ],
+      "expected_answer": "Aguas poco profundas y zonas donde se encuentran corrientes oceánicas cálidas y frías.",
+      "rubric": [
+        {
+          "id": "q1-c1",
+          "description": "Aguas poco profundas",
+          "max_score": 1,
+          "awarded_score": 0,
+          "feedback": "No se menciona la poca profundidad."
+        },
+        {
+          "id": "q1-c2",
+          "description": "Encuentro de corrientes cálidas y frías",
+          "max_score": 1,
+          "awarded_score": 0,
+          "feedback": "Frío por sí solo no identifica el encuentro de corrientes; el coral no es uno de los factores pedidos por la fuente."
+        }
+      ]
+    },
+    {
+      "question_id": "q2",
+      "status": "graded",
+      "score": 2.0,
+      "max_score": 2,
+      "feedback": "Correcta en los tres aspectos evaluados. No se puntúan como hechos de la fuente las generalizaciones sobre selectividad, bajo impacto o los ejemplos adicionales de lugares.",
+      "source_ref_ids": [
+        "u2-2"
+      ],
+      "expected_answer": "Capturas para autoabastecimiento o mercados locales; pequeñas embarcaciones y medios sencillos (redes, arpones, anzuelos o nasas); aguas dulces, orillas y costa.",
+      "rubric": [
+        {
+          "id": "q2-c1",
+          "description": "Destino: autoconsumo o mercado local",
+          "max_score": 0.75,
+          "awarded_score": 0.75,
+          "feedback": "Identifica consumo directo y mercados locales."
+        },
+        {
+          "id": "q2-c2",
+          "description": "Embarcaciones pequeñas y herramientas sencillas",
+          "max_score": 0.75,
+          "awarded_score": 0.75,
+          "feedback": "Barcos pequeños, anzuelos, nasas y redes identificados."
+        },
+        {
+          "id": "q2-c3",
+          "description": "Localización: aguas dulces, orillas o costa",
+          "max_score": 0.5,
+          "awarded_score": 0.5,
+          "feedback": "Identifica costa y aguas interiores."
+        }
+      ]
+    },
+    {
+      "question_id": "q3",
+      "status": "graded",
+      "score": 1.5,
+      "max_score": 2,
+      "feedback": "Buena comparación de tamaños y conservación; duración y tecnología incompletas. La fuente contrasta 1–2 días con meses y menciona sonar y radar. No fija una semana mínima ni agotar suministros.",
+      "source_ref_ids": [
+        "u2-3"
+      ],
+      "expected_answer": "Costera: barcos pequeños, salidas de 1–2 días y tecnología mínima. Altura: grandes barcos o flotas, meses en mar abierto, sonar y radar para localizar bancos, buques factoría que procesan y congelan a bordo. El material no especifica conservación a bordo para la costera; no se exige inventarla.",
+      "rubric": [
+        {
+          "id": "q3-c1",
+          "description": "Tamaño de embarcaciones",
+          "max_score": 0.5,
+          "awarded_score": 0.5,
+          "feedback": "Contrasta correctamente tamaños."
+        },
+        {
+          "id": "q3-c2",
+          "description": "Duración: 1–2 días frente a meses",
+          "max_score": 0.5,
+          "awarded_score": 0.25,
+          "feedback": "Reconoce mayor duración; faltan 1–2 días y meses. El mínimo de una semana y agotar suministros no proceden del material."
+        },
+        {
+          "id": "q3-c3",
+          "description": "Tecnología: mínima frente a sonar y radar",
+          "max_score": 0.5,
+          "awarded_score": 0.25,
+          "feedback": "Identifica radar y bancos de peces; faltan sonar y contraste con tecnología mínima. No se acredita la función de ver el fondo con radar."
+        },
+        {
+          "id": "q3-c4",
+          "description": "Procesamiento y congelación en buques factoría",
+          "max_score": 0.5,
+          "awarded_score": 0.5,
+          "feedback": "Identifica procesamiento y congelación a bordo; el empaquetado para venta directa es un añadido no necesario ni verificado."
+        }
+      ]
+    },
+    {
+      "question_id": "q4",
+      "status": "graded",
+      "score": 1,
+      "max_score": 2,
+      "feedback": "Correcto el mecanismo básico del arrastre. Falta la segunda técnica: el texto describe descargas que dirigen a los peces y embudos que los aspiran.",
+      "source_ref_ids": [
+        "u2-4"
+      ],
+      "expected_answer": "Arrastre: grandes redes con forma de embudo remolcadas por barcos. Según el documento, la pesca eléctrica con succión dirige peces mediante descargas y los recoge mediante grandes embudos de aspiración.",
+      "rubric": [
+        {
+          "id": "q4-c1",
+          "description": "Arrastre: red remolcada por el barco",
+          "max_score": 1,
+          "awarded_score": 1,
+          "feedback": "Explica correctamente el mecanismo central. La fuente describe una red grande en forma de embudo; no exige que todo arrastre sea de fondo."
+        },
+        {
+          "id": "q4-c2",
+          "description": "Pesca eléctrica con succión: descargas y aspiración",
+          "max_score": 1,
+          "awarded_score": 0,
+          "feedback": "Declara no conocer esta técnica."
+        }
+      ]
+    },
+    {
+      "question_id": "q5",
+      "status": "graded",
+      "score": 1.75,
+      "max_score": 2,
+      "feedback": "Bien los grupos y la idea de cultivo en espacios delimitados. No queda limitada al mar: también hay piscifactorías fluviales. Falta una especie concreta, como trucha, dorada, lubina o rodaballo.",
+      "source_ref_ids": [
+        "u2-5"
+      ],
+      "expected_answer": "Cría o cultivo de peces, crustáceos, moluscos o algas en entornos controlados. Instalaciones: plataformas para mejillones o piscifactorías marinas/fluviales. Ejemplo de especie: trucha, dorada, lubina o rodaballo.",
+      "rubric": [
+        {
+          "id": "q5-c1",
+          "description": "Cría o cultivo de organismos acuáticos en entornos controlados",
+          "max_score": 1,
+          "awarded_score": 1,
+          "feedback": "La respuesta conjunta sobre cultivo y zonas marinas delimitadas expresa la idea central; se acepta formulación coloquial. No se exige repetir literalmente la definición."
+        },
+        {
+          "id": "q5-c2",
+          "description": "Dos grupos de organismos",
+          "max_score": 0.5,
+          "awarded_score": 0.5,
+          "feedback": "Peces y crustáceos bastan; también menciona algas."
+        },
+        {
+          "id": "q5-c3",
+          "description": "Instalación y especie del material",
+          "max_score": 0.5,
+          "awarded_score": 0.25,
+          "feedback": "Se acepta la descripción de recintos delimitados en el mar como instalación de cría (0,25). Falta una especie concreta del material (0/0,25)."
+        }
+      ]
+    }
+  ],
+  "review_areas": [
+    {
+      "concept": "Factores de localización",
+      "question_ids": [
+        "q1"
+      ],
+      "recommendation": "Recordar poca profundidad y encuentro de corrientes cálidas/frías.",
+      "source_ref_ids": [
+        "u2-1"
+      ]
+    },
+    {
+      "concept": "Pesca comercial costera y de altura",
+      "question_ids": [
+        "q3"
+      ],
+      "recommendation": "Contrastar 1–2 días y meses; tecnología mínima y sonar/radar.",
+      "source_ref_ids": [
+        "u2-3"
+      ]
+    },
+    {
+      "concept": "Técnicas de pesca",
+      "question_ids": [
+        "q4"
+      ],
+      "recommendation": "Explicar las dos fases de la técnica eléctrica con succión descrita en la fuente.",
+      "source_ref_ids": [
+        "u2-4"
+      ]
+    },
+    {
+      "concept": "Acuicultura",
+      "question_ids": [
+        "q5"
+      ],
+      "recommendation": "Relacionar instalaciones marinas/fluviales con una especie concreta.",
+      "source_ref_ids": [
+        "u2-5"
+      ]
+    }
+  ],
+  "limitations": [
+    {
+      "code": "source_reading",
+      "question_id": null,
+      "image_path": null,
+      "description": "Se leyó el texto OOXML del DOCX por apartados, sin verificar paginación ni maquetación visual. SHA del blob e19775f3758c384b72c7079ea4672b10a4b4e6d2 comprobado contra el árbol del snapshot, commit 0383ebb0e59ab6596f0b6de21ec7faf0b7d96fc9.",
+      "prevents_conclusive_grading": false
+    },
+    {
+      "code": "general_practice",
+      "question_id": null,
+      "image_path": null,
+      "description": "Práctica general; no está basada en exámenes del centro ni pretende imitar su estilo. Ausencia de context-exam.md comprobada en el árbol completo del commit del plan.",
+      "prevents_conclusive_grading": false
+    },
+    {
+      "code": "conditions_unverified",
+      "question_id": null,
+      "image_path": null,
+      "description": "Se indicó realizar la prueba sin apuntes. Respuestas recibidas por texto en chat; no se observaron el uso de apuntes ni la supervisión.",
+      "prevents_conclusive_grading": false
+    },
+    {
+      "code": "adult_review_pending",
+      "question_id": null,
+      "image_path": null,
+      "description": "Revisión adulta pendiente; dominio sin acreditar. Puntuación inferior a 8/10; posible error conceptual grave en q1 pendiente de revisión. Una prueba posterior independiente sigue pendiente, sin fecha fijada.",
+      "prevents_conclusive_grading": false
+    },
+    {
+      "code": "recording_timestamps",
+      "question_id": null,
+      "image_path": null,
+      "description": "created_at y submitted_at corresponden al registro del lote tras la entrega explícita, no a horas observadas de inicio y fin de estudio.",
+      "prevents_conclusive_grading": false
+    },
+    {
+      "code": "public_authorization",
+      "question_id": null,
+      "image_path": null,
+      "description": "El usuario autorizó expresamente publicar examen, cinco respuestas y corrección, vinculados al alumno 1, sin nombre real ni otros datos personales.",
+      "prevents_conclusive_grading": false
+    }
+  ]
+}

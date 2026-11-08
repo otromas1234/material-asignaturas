@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "practice_id": "20261108-1122-s07-pesca",
+  "student": {
+    "id": "1",
+    "name": "Alumno 1"
+  },
+  "subject": {
+    "slug": "historia",
+    "name": "Historia y Geografía"
+  },
+  "status": "submitted",
+  "submitted_at": "2026-11-08T11:22:03+01:00",
+  "answers": [
+    {
+      "question_id": "q1",
+      "text": "el frio y zonas de coral",
+      "images": []
+    },
+    {
+      "question_id": "q2",
+      "text": "- Destino de las capturas: Se destinan casi en su totalidad al consumo humano directo y a la venta en mercados y comercios locales de proximidad.\\\n\n- Embarcaciones y herramientas: Utiliza barcos pequeños (lanchas o botes) y artes de pesca muy selectivas de bajo impacto, como anzuelos, nasas y redes artesanales.\\\n\n- Dónde se practica: En aguas litorales y de bajura (cerca de la costa), rías, estuarios, manglares y aguas interiores como ríos y lagos.",
+      "images": []
+    },
+    {
+      "question_id": "q3",
+      "text": "el tamaño es mucho mayor en la pesca de altura que en la costera.\nel tiempo es mayor en la de altura suele ser minimo de una semana hasta que se le terminen los suministros para mantener a la tripulacion.\nTiene radares para ver fondo marino y detectar bancos de peces\nse conservan en la bodega congelados o incluso se procesan empaquetan para la venta directa en tiendas",
+      "images": []
+    },
+    {
+      "question_id": "q4",
+      "text": "la pesca de arrastre se trata de soltar la red en el mar y que apolle en el fondo marino y moverse con el barco para ir tirando de la red la otra no se de que se trata",
+      "images": []
+    },
+    {
+      "question_id": "q5",
+      "text": "Bueno, dos peces, crustáceos, y supongo que algún tipo de algas se cultivan. Y bueno, se suelen utilizar en el mar, utilizando los recursos del mar, pero en las zonas perimetradas. Entrego.",
+      "images": []
+    }
+  ]
+}
