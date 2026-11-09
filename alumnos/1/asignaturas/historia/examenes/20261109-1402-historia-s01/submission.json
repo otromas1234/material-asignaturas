@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "practice_id": "20261109-1402-historia-s01",
+  "student": {
+    "id": "1",
+    "name": "1"
+  },
+  "subject": {
+    "slug": "historia",
+    "name": "Historia y geografía"
+  },
+  "status": "submitted",
+  "submitted_at": "2026-11-09T14:02:55+01:00",
+  "answers": [
+    {
+      "question_id": "q1",
+      "text": "No sé (ns).",
+      "images": []
+    },
+    {
+      "question_id": "q2",
+      "text": "La producción es cuando se produce un producto, por ejemplo cuando le sacas la leche a la vaca. La distribución es cuando viene un camión y lo lleva a supermercados o a otros sitios. El consumo es cuando después de comprar la leche en el supermercado, en tu casa te la bebes.",
+      "images": []
+    },
+    {
+      "question_id": "q3",
+      "text": "Los hogares a las empresas les aportan ventas porque los hogares les compran cosas y las empresas les proporcionan productos y trabajo y las empresas con ese trabajo ganan dinero.",
+      "images": []
+    },
+    {
+      "question_id": "q4",
+      "text": "El gobierno realiza actividades económicas como crear carreteras, trabajos como policía, bombero, médico, etc., y el dinero lo saca de los impuestos que paga la gente.",
+      "images": []
+    },
+    {
+      "question_id": "q5",
+      "text": "Agua: recursos naturales; horas de una trabajadora: trabajo; una máquina: no sé (ns); dinero: capital.",
+      "images": []
+    },
+    {
+      "question_id": "q6",
+      "text": "Su poder adquisitivo baja porque con lo que gana ya no puede comprar lo mismo que antes; ahora tiene que comprar menos cosas.",
+      "images": []
+    },
+    {
+      "question_id": "q7",
+      "text": "Recursos naturales, trabajo y capital. Por ejemplo, si hablamos de una mina o de excavar, están los recursos naturales como agua o piedra; luego los trabajadores que controlan las máquinas o hacen otras cosas. Si sacan oro, puede pasar por procesos para convertirlo en algo como un collar o una pulsera; después, en una tienda lo compras.",
+      "images": []
+    }
+  ]
+}
+
