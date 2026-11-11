@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "subject": {
+    "slug": "historia",
+    "name": "Historia sintética"
+  },
+  "source_snapshot": {
+    "repository": "otromas1234/material-asignaturas",
+    "tag": "plan/historia/20261030-fixture"
+  },
+  "references": [
+    {
+      "id": "ref-1",
+      "path": "asignaturas/historia/examenes-referencia/synthetic.txt",
+      "year": null,
+      "read_status": "partial",
+      "included_locators": [
+        "Pregunta A"
+      ],
+      "excluded_locators": [
+        {
+          "locator": "Página 2",
+          "reason": "Imagen ilegible en fixture sintético"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Página 2 excluida; muestra parcial."
+  ]
+}

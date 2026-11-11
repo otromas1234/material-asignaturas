@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "dimension": {
+        "enum": [
+          "question_types",
+          "organization",
+          "instructions",
+          "apparent_difficulty",
+          "response_modes"
+        ]
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "evidence": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "reference_id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "locator": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "reference_id",
+            "locator"
+          ],
+          "additionalProperties": false
+        },
+        "minItems": 1
+      }
+    },
+    "required": [
+      "id",
+      "dimension",
+      "description",
+      "evidence"
+    ],
+    "additionalProperties": false
+  },
+  "minItems": 1
+}

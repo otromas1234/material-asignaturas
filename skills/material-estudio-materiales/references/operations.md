@@ -1,0 +1,22 @@
+# Operaciones y recuperación
+
+## Preparación y escritura
+1. Confirma solicitud explícita, asignatura, categoría, rama y cada ruta. Una carga por lotes asigna destino por archivo.
+2. Consulta árbol/archivos remotos y el SHA de los destinos existentes. Si no puedes determinar el estado o estructura, detente.
+3. Conserva archivos que no estén expresamente seleccionados. Actualiza solo el destino solicitado, usando su SHA actual; elimina solo ante petición explícita.
+4. Usa GitHub MCP para crear/actualizar/eliminar y verifica cada ruta/contenido y el SHA del commit devuelto. No supongas que la escritura funcionó por el permiso declarado.
+5. Tras un lote efectivo, crea un tag de snapshot solo después de verificar commit y árbol resultante.
+
+## Tags y restricciones de esta sesión
+- Nombre base: `plan/<slug-asignatura>/<YYYYMMDD>-<identificador-corto>`; cada tag debe apuntar al commit que contiene el estado completo posterior al cambio. La Skill trata los tags como inmutables: nunca los actualiza, fuerza ni elimina. Antes del commit de materiales, genera un identificador corto derivado de un UUID aleatorio y verifica que el nombre completo propuesto no exista en remoto. Si existe, regenera el identificador y vuelve a verificar, con un máximo de 5 intentos. Si los 5 nombres colisionan o no puedes verificar la existencia remota, detente antes del commit de materiales y no publiques nada. Tras el commit, el tag creado debe apuntar al SHA exacto verificado.
+- GitHub MCP realiza el commit de materiales y no ofrece herramienta dedicada para tags. El CLI incluido con esta Skill está en `scripts/tag_snapshot.py`; resuelve la ruta desde el directorio instalado de `material-estudio-materiales`, sin asumir una ruta absoluta de máquina. Separa la operación en dos fases. **Antes del commit de materiales**, tras autorizar la carga, ejecuta `python3 <ruta-de-esta-skill>/scripts/tag_snapshot.py preflight --repo <canonical-clone-path> --slug <slug> --date <YYYYMMDD>`; devuelve `tag=<ref>` libre observado. Guarda ese nombre exacto para la fase posterior. Después de verificar el commit final, ejecuta `python3 <ruta-de-esta-skill>/scripts/tag_snapshot.py publish --repo <canonical-clone-path> --tag <tag-preflight> --sha <full-commit-sha>`. Ambas fases exigen origin exacto `github.com/otromas1234/material-asignaturas`, checkout `main`, y ejecutan `git fetch --no-tags origin main`; publish comprueba que el SHA completo esté alcanzable desde `refs/remotes/origin/main`. Fechas requieren calendario válido. Publish vuelve a comprobar que el tag no exista local ni remotamente, usa push no forzado y verifica el SHA remoto exacto. El preflight NO reserva el nombre: si alguien crea el tag entre fases o antes del push, publish falla sin force/overwrite; como el commit de materiales ya existe, reporta el commit y el tag pendiente (estado parcial), no repitas la carga ni intentes mover/borrar el tag. La salida de éxito incluye `tag=<ref> sha=<sha>`; cualquier error devuelve código distinto de cero. No ejecutes el CLI durante pruebas o sin operación autorizada. Tests offline adyacentes simulan subprocess y fetch/error; no tocan GitHub. No se hizo una operación real de creación/push de tag.
+- La inmutabilidad indicada es una regla de comportamiento de la Skill, no garantía global: un propietario externo con permisos puede modificar o borrar el tag salvo que un ruleset del repositorio lo impida. No se verificó si existe tal enforcement.
+- No se usa tag como test ni se hace una escritura de prueba de materiales. Si no hay clon canónico, remoto/autenticación utilizables o commit exacto verificable, detente sin tag y comunica el fallo parcial.
+- Si el commit de materiales se verificó pero falla la operación del tag, informa rutas y SHA del commit con estado parcial. No repitas la carga automáticamente.
+- Sin cambio de materiales no hay tag.
+- Solo los commits que añaden, sustituyen o eliminan material crean un nuevo snapshot tag. La publicación de planes (`planes/`), perfiles de estilo (`examenes/<slug>/context-exam.md`) y prácticas (`alumnos/`) no crea tags; esas salidas registran el tag material del que dependen.
+
+## Fallos
+- Antes del commit: no afirmar publicación; indicar el error observado.
+- Tras el commit: distinguir persistencia de archivos de creación del snapshot. Reintentar solo la etapa fallida después de verificar estado remoto y ausencia del tag.
+- Conflicto de SHA/rama o discrepancia estructural: detenerse; no forzar ni sobrescribir.

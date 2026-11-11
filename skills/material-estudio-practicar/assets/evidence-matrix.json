@@ -1,0 +1,26 @@
+[
+  {
+    "question_id": "q1",
+    "difficulty": "usual",
+    "key_concepts": [
+      "intercambio"
+    ],
+    "source_ref_ids": [
+      "src-1"
+    ],
+    "original": true,
+    "predicts_recurrence": false
+  },
+  {
+    "question_id": "q2",
+    "difficulty": "demanding",
+    "key_concepts": [
+      "intercambio"
+    ],
+    "source_ref_ids": [
+      "src-1"
+    ],
+    "original": true,
+    "predicts_recurrence": false
+  }
+]

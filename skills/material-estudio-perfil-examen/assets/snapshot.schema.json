@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "repository": {
+      "const": "otromas1234/material-asignaturas"
+    },
+    "tag": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  },
+  "required": [
+    "repository",
+    "tag"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,274 @@
+{
+  "exam": {
+    "schema_version": "1.0",
+    "practice_id": "20261030-1200-synthetic",
+    "created_at": "2026-10-30T12:00:00+01:00",
+    "student": {
+      "id": "synthetic-student",
+      "name": "Alumno sintético"
+    },
+    "subject": {
+      "slug": "historia",
+      "name": "Historia sintética"
+    },
+    "source_snapshot": {
+      "repository": "otromas1234/material-asignaturas",
+      "tag": "plan/historia/20261030-fixture"
+    },
+    "plan_reference": null,
+    "profile": {
+      "path": "examenes/historia/context-exam.md",
+      "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "source_snapshot": {
+        "repository": "otromas1234/material-asignaturas",
+        "tag": "plan/historia/20261030-fixture"
+      },
+      "references": [
+        {
+          "id": "ref-1",
+          "path": "asignaturas/historia/examenes-referencia/synthetic.txt",
+          "year": null,
+          "read_status": "partial",
+          "included_locators": [
+            "Pregunta A"
+          ],
+          "excluded_locators": [
+            {
+              "locator": "Página 2",
+              "reason": "Imagen ilegible en fixture sintético"
+            }
+          ]
+        }
+      ]
+    },
+    "practice_mode": "profile_based",
+    "scope": {
+      "description": "Fuente sintética, sección Intercambio",
+      "units": [
+        "Intercambio"
+      ],
+      "key_concepts": [
+        "intercambio"
+      ]
+    },
+    "source_refs": [
+      {
+        "id": "src-1",
+        "path": "asignaturas/historia/contenidos/synthetic.txt",
+        "unit": "Intercambio",
+        "key_concepts": [
+          "intercambio"
+        ],
+        "locators": [
+          {
+            "kind": "heading",
+            "value": "Intercambio"
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Explica dos funciones del intercambio según la fuente sintética.",
+        "response_mode": "chat",
+        "requires_image": false,
+        "max_score": 2,
+        "source_ref_ids": [
+          "src-1"
+        ]
+      },
+      {
+        "id": "q2",
+        "prompt": "Aplica el concepto a una sociedad ficticia y justifica un límite.",
+        "response_mode": "graph_text",
+        "requires_image": false,
+        "max_score": 2,
+        "source_ref_ids": [
+          "src-1"
+        ]
+      }
+    ]
+  },
+  "submission": {
+    "schema_version": "1.0",
+    "practice_id": "20261030-1200-synthetic",
+    "student": {
+      "id": "synthetic-student",
+      "name": "Alumno sintético"
+    },
+    "subject": {
+      "slug": "historia",
+      "name": "Historia sintética"
+    },
+    "status": "submitted",
+    "submitted_at": "2026-10-30T12:15:00+01:00",
+    "answers": [
+      {
+        "question_id": "q1",
+        "text": "Intercambio de bienes y especialización.",
+        "images": []
+      },
+      {
+        "question_id": "q2",
+        "text": "Puede facilitar especialización; depende del transporte.",
+        "images": []
+      }
+    ]
+  },
+  "result": {
+    "schema_version": "1.0",
+    "practice_id": "20261030-1200-synthetic",
+    "created_at": "2026-10-30T12:00:00+01:00",
+    "student": {
+      "id": "synthetic-student",
+      "name": "Alumno sintético"
+    },
+    "subject": {
+      "slug": "historia",
+      "name": "Historia sintética"
+    },
+    "source_snapshot": {
+      "repository": "otromas1234/material-asignaturas",
+      "tag": "plan/historia/20261030-fixture"
+    },
+    "plan_reference": null,
+    "profile": {
+      "path": "examenes/historia/context-exam.md",
+      "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "source_snapshot": {
+        "repository": "otromas1234/material-asignaturas",
+        "tag": "plan/historia/20261030-fixture"
+      },
+      "references": [
+        {
+          "id": "ref-1",
+          "path": "asignaturas/historia/examenes-referencia/synthetic.txt",
+          "year": null,
+          "read_status": "partial",
+          "included_locators": [
+            "Pregunta A"
+          ],
+          "excluded_locators": [
+            {
+              "locator": "Página 2",
+              "reason": "Imagen ilegible en fixture sintético"
+            }
+          ]
+        }
+      ]
+    },
+    "practice_mode": "profile_based",
+    "scope": {
+      "description": "Fuente sintética, sección Intercambio",
+      "units": [
+        "Intercambio"
+      ],
+      "key_concepts": [
+        "intercambio"
+      ]
+    },
+    "source_refs": [
+      {
+        "id": "src-1",
+        "path": "asignaturas/historia/contenidos/synthetic.txt",
+        "unit": "Intercambio",
+        "key_concepts": [
+          "intercambio"
+        ],
+        "locators": [
+          {
+            "kind": "heading",
+            "value": "Intercambio"
+          }
+        ]
+      }
+    ],
+    "corrected_at": "2026-10-30T12:20:00+01:00",
+    "status": "complete",
+    "score": {
+      "total": 3,
+      "max": 4,
+      "assessed_total": 3,
+      "assessed_max": 4
+    },
+    "questions": [
+      {
+        "question_id": "q1",
+        "status": "graded",
+        "score": 1.5,
+        "max_score": 2,
+        "feedback": "Respuesta parcial; falta justificar una relación.",
+        "source_ref_ids": [
+          "src-1"
+        ],
+        "expected_answer": "SYNTHETIC_PRIVATE_KEY: relacionar intercambio con especialización y justificar límites.",
+        "rubric": [
+          {
+            "id": "c1",
+            "description": "Identifica la relación",
+            "max_score": 1,
+            "awarded_score": 1,
+            "feedback": "Relación identificada."
+          },
+          {
+            "id": "c2",
+            "description": "Justifica con apoyo curricular",
+            "max_score": 1,
+            "awarded_score": 0.5,
+            "feedback": "Justificación incompleta."
+          }
+        ]
+      },
+      {
+        "question_id": "q2",
+        "status": "graded",
+        "score": 1.5,
+        "max_score": 2,
+        "feedback": "Respuesta parcial; falta justificar una relación.",
+        "source_ref_ids": [
+          "src-1"
+        ],
+        "expected_answer": "SYNTHETIC_PRIVATE_KEY: relacionar intercambio con especialización y justificar límites.",
+        "rubric": [
+          {
+            "id": "c1",
+            "description": "Identifica la relación",
+            "max_score": 1,
+            "awarded_score": 1,
+            "feedback": "Relación identificada."
+          },
+          {
+            "id": "c2",
+            "description": "Justifica con apoyo curricular",
+            "max_score": 1,
+            "awarded_score": 0.5,
+            "feedback": "Justificación incompleta."
+          }
+        ]
+      }
+    ],
+    "review_areas": [
+      {
+        "concept": "intercambio",
+        "question_ids": [
+          "q1",
+          "q2"
+        ],
+        "recommendation": "Revisar la justificación causal.",
+        "source_ref_ids": [
+          "src-1"
+        ]
+      }
+    ],
+    "limitations": [
+      {
+        "code": "partial_profile",
+        "question_id": null,
+        "image_path": null,
+        "description": "Página 2 excluida; muestra parcial.",
+        "prevents_conclusive_grading": false
+      }
+    ]
+  }
+}

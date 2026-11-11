@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "unit": {
+        "const": "distinct_exams"
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "observed_count": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "sample_size": {
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "evidence": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "reference_id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "locator": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "reference_id",
+            "locator"
+          ],
+          "additionalProperties": false
+        },
+        "minItems": 1
+      },
+      "comparability_limits": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    },
+    "required": [
+      "id",
+      "unit",
+      "description",
+      "observed_count",
+      "sample_size",
+      "evidence",
+      "comparability_limits"
+    ],
+    "additionalProperties": false
+  },
+  "minItems": 0
+}

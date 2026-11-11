@@ -1,0 +1,676 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "practice_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^\\d{8}-\\d{4}-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S",
+      "format": "date-time"
+    },
+    "student": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "subject": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "slug",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "source_snapshot": {
+      "type": "object",
+      "properties": {
+        "repository": {
+          "const": "otromas1234/material-asignaturas"
+        },
+        "tag": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "repository",
+        "tag"
+      ],
+      "additionalProperties": false
+    },
+    "plan_reference": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "commit": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9a-f]{40}$"
+            },
+            "session_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "path",
+            "commit",
+            "session_ids"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "profile": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "commit": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[0-9a-f]{40}$"
+            },
+            "source_snapshot": {
+              "type": "object",
+              "properties": {
+                "repository": {
+                  "const": "otromas1234/material-asignaturas"
+                },
+                "tag": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "repository",
+                "tag"
+              ],
+              "additionalProperties": false
+            },
+            "references": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "year": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "read_status": {
+                    "enum": [
+                      "complete",
+                      "partial"
+                    ]
+                  },
+                  "included_locators": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "minItems": 1
+                  },
+                  "excluded_locators": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "locator": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        },
+                        "reason": {
+                          "type": "string",
+                          "minLength": 1,
+                          "pattern": "\\S"
+                        }
+                      },
+                      "required": [
+                        "locator",
+                        "reason"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "minItems": 0
+                  }
+                },
+                "required": [
+                  "id",
+                  "path",
+                  "year",
+                  "read_status",
+                  "included_locators",
+                  "excluded_locators"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            }
+          },
+          "required": [
+            "path",
+            "commit",
+            "source_snapshot",
+            "references"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "practice_mode": {
+      "enum": [
+        "profile_based",
+        "general"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        },
+        "key_concepts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "description",
+        "units",
+        "key_concepts"
+      ],
+      "additionalProperties": false
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "unit": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "key_concepts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 0
+          },
+          "locators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "page",
+                    "heading",
+                    "section",
+                    "range",
+                    "region"
+                  ]
+                },
+                "value": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "kind",
+                "value"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "id",
+          "path",
+          "unit",
+          "key_concepts",
+          "locators"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "corrected_at": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S",
+      "format": "date-time"
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "inconclusive"
+      ]
+    },
+    "score": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "max": {
+          "type": "number",
+          "minimum": 0
+        },
+        "assessed_total": {
+          "type": "number",
+          "minimum": 0
+        },
+        "assessed_max": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "total",
+        "max",
+        "assessed_total",
+        "assessed_max"
+      ],
+      "additionalProperties": false
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "status": {
+            "enum": [
+              "graded",
+              "not_assessable"
+            ]
+          },
+          "answer_status": {
+            "enum": ["correct", "partially_correct", "incorrect", "not_assessable"]
+          },
+          "strengths": {"type": "array", "items": {"type": "string", "minLength": 1, "pattern": "\\S"}},
+          "improvement_areas": {"type": "array", "items": {"type": "string", "minLength": 1, "pattern": "\\S"}},
+          "score": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "max_score": {
+            "type": "number",
+            "minimum": 0
+          },
+          "feedback": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "source_ref_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 1
+          },
+          "expected_answer": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "rubric": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "max_score": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "awarded_score": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "feedback": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "id",
+                "description",
+                "max_score",
+                "awarded_score",
+                "feedback"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "question_id",
+          "status",
+          "score",
+          "max_score",
+          "feedback",
+          "source_ref_ids",
+          "expected_answer",
+          "rubric"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "review_areas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "concept": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "question_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 1
+          },
+          "recommendation": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "source_ref_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "concept",
+          "question_ids",
+          "recommendation",
+          "source_ref_ids"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "question_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_path": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "prevents_conclusive_grading": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "code",
+          "question_id",
+          "image_path",
+          "description",
+          "prevents_conclusive_grading"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "didactic_report": {
+      "type": "object",
+      "properties": {
+        "practice_id": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "student_name": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "subject_name": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "created_at": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "corrected_at": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "status": {"enum": ["complete", "inconclusive"]},
+        "score": {
+          "type": "object",
+          "properties": {"total": {"anyOf": [{"type": "number", "minimum": 0}, {"type": "null"}]}, "max": {"type": "number", "minimum": 0}},
+          "required": ["total", "max"], "additionalProperties": false
+        },
+        "questions": {
+          "type": "array", "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "question_id": {"type": "string", "minLength": 1, "pattern": "\\S"},
+              "prompt": {"type": "string", "minLength": 1, "pattern": "\\S"},
+              "student_answer": {"type": "string"},
+              "expected_answer": {"type": "string", "minLength": 1, "pattern": "\\S"},
+              "status": {"enum": ["correct", "partially_correct", "incorrect", "not_assessable"]},
+              "score": {"anyOf": [{"type": "number", "minimum": 0}, {"type": "null"}]},
+              "max_score": {"type": "number", "minimum": 0},
+              "feedback": {"type": "string", "minLength": 1, "pattern": "\\S"},
+              "strengths": {"type": "array", "items": {"type": "string", "minLength": 1, "pattern": "\\S"}},
+              "improvement_areas": {"type": "array", "items": {"type": "string", "minLength": 1, "pattern": "\\S"}}
+            },
+            "required": ["question_id", "prompt", "student_answer", "expected_answer", "status", "score", "max_score", "feedback", "strengths", "improvement_areas"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["practice_id", "student_name", "subject_name", "created_at", "corrected_at", "status", "score", "questions"],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "practice_id",
+    "created_at",
+    "student",
+    "subject",
+    "source_snapshot",
+    "plan_reference",
+    "profile",
+    "practice_mode",
+    "scope",
+    "source_refs",
+    "corrected_at",
+    "status",
+    "score",
+    "questions",
+    "review_areas",
+    "limitations"
+  ],
+  "additionalProperties": false
+}
